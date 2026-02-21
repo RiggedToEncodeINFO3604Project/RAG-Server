@@ -14,100 +14,182 @@ SECTIONS: list[Section] = [
         id="overview",
         title="1. General Product Overview",
         keywords=[
-            "skedulelt", "what is", "about", "overview",
-            "platform", "ios", "android", "trinidad",
+            "skedulelt", "skeduleit", "what is", "about", "overview",
+            "platform", "ios", "android", "trinidad", "mobile app",
+            "website", "web app",
         ],
         content=(
-            "Skedulelt is a mobile scheduling and payment solution specifically designed\n"
-            "for service providers and customers in Trinidad & Tobago (T&T).\n"
+            "SkeduleIt is a mobile scheduling and payment solution designed for service\n"
+            "providers and customers in Trinidad & Tobago (T&T).\n"
             "\n"
-            "Target Users : Barbers, hairdressers, aestheticians, and their clients.\n"
-            "Platforms    : iOS and Android."
+            "Target Users : Service businesses (barbers, hairdressers, aestheticians, etc.)\n"
+            "               and their customers.\n"
+            "Platforms    : iOS and Android mobile apps, plus a public website.\n"
+            "               A web app with full functionality will be available soon.\n"
+            "\n"
+            "Two Apps:\n"
+            "• Customer App  - Browse businesses, book appointments, manage bookings\n"
+            "• Business App  - Manage profile, services, team, availability, payments"
         ),
     ),
+    
+    Section(
+        id="account_signup",
+        title="2. Account Creation & Signup",
+        keywords=[
+            "sign up", "signup", "create account", "register", "new account",
+            "customer account", "business account", "credit card", "payment info",
+            "approval", "review process", "free trial",
+        ],
+        content=(
+            "=== Customer Accounts ===\n"
+            "When you create a customer account, you can immediately:\n"
+            "• Browse businesses\n"
+            "• Schedule appointments\n"
+            "• Manage upcoming appointments\n"
+            "• Receive confirmations and reminders\n"
+            "\n"
+            "No credit card required. Your account is active immediately upon signup.\n"
+            "\n"
+            "=== Business Accounts ===\n"
+            "When a business signs up, the account enters a brief review process to ensure\n"
+            "only legitimate businesses are listed. Once approved, you can:\n"
+            "• Create your business profile\n"
+            "• Add services and pricing\n"
+            "• Add team members (service providers)\n"
+            "• Manage availability\n"
+            "• Handle appointments\n"
+            "• Use payment and reporting tools\n"
+            "\n"
+            "No credit card required during signup or free trial. Payment details are only\n"
+            "needed if you choose to continue with a paid plan after the trial.\n"
+            "\n"
+            "=== Guest Booking ===\n"
+            "Customers can browse and book appointments WITHOUT creating an account, but\n"
+            "certain features (like managing bookings and receiving reminders) require signup."
+        ),
+    ),
+    
+    Section(
+        id="business_vs_provider",
+        title="3. Business vs Service Provider",
+        keywords=[
+            "business", "service provider", "team member", "employee",
+            "sole trader", "independent contractor", "difference",
+            "multiple providers", "add team", "staff",
+        ],
+        content=(
+            "=== What's the Difference? ===\n"
+            "\n"
+            "Business:\n"
+            "The company or entity listed on SkeduleIt (e.g., 'Trini Cuts Barbershop').\n"
+            "\n"
+            "Service Provider:\n"
+            "An individual who performs the service - whether an employee, team member,\n"
+            "sole trader, or independent contractor under that business.\n"
+            "\n"
+            "Example:\n"
+            "• 'Trini Cuts Barbershop' is the Business\n"
+            "• 'Marcus (Barber)' and 'Jade (Barber)' are Service Providers\n"
+            "\n"
+            "For Sole Traders:\n"
+            "If you work alone, the business and service provider are essentially the same.\n"
+            "\n"
+            "=== Adding Multiple Service Providers ===\n"
+            "Yes! Businesses can add multiple service providers or team members to their\n"
+            "account and assign specific services to each person."
+        ),
+    ),
+    
     Section(
         id="customer_faq",
-        title="2. Customer FAQ",
+        title="4. Customer FAQ",
         keywords=[
             "book", "booking", "schedule", "appointment", "make appointment",
-            "talk", "chat", "message", "contact", "send photo", "messaging",
-            "pay", "payment", "cost", "credit card", "transaction", "price",
-            "how do i", "barber", "stylist", "portfolio",
+            "browse", "search", "find business", "cancel appointment",
+            "manage booking", "confirmation", "reminder",
         ],
         content=(
-            '--- How do I book an appointment? ---\n'
-            'Open the Skedulelt Customer App, use the "Search & Discovery" feature to find\n'
-            "a provider (like a barber or stylist), view their portfolio, and select an\n"
-            "available time slot.\n"
+            "=== How do I book an appointment? ===\n"
+            "Open the SkeduleIt Customer App, browse or search for a business, view their\n"
+            "services and availability, and select a time slot. You can book with or without\n"
+            "creating an account.\n"
             "\n"
-            "--- Can I talk to my service provider before the appointment? ---\n"
-            'Yes. The app includes an "In-App Messaging" service. You can send text\n'
-            "messages and photos directly to your provider once a booking has been assigned.\n"
+            "=== Can I manage my appointments? ===\n"
+            "Yes! If you have a customer account, you can view, reschedule, or cancel\n"
+            "upcoming appointments directly in the app. You'll also receive confirmations\n"
+            "and reminders.\n"
             "\n"
-            "--- How does payment work? ---\n"
-            'Payments are handled securely through the app\'s integrated "Payment Processing\n'
-            'Service." It supports local transaction standards in Trinidad & Tobago.'
+            "=== Is my information private? ===\n"
+            "Yes. Your customer information is completely private and never visible to\n"
+            "other customers."
         ),
     ),
+    
     Section(
-        id="provider_faq",
-        title="3. Service Provider FAQ",
+        id="business_faq",
+        title="5. Business FAQ",
         keywords=[
-            "manage", "schedule", "availability", "calendar", "working hours", "block time",
-            "grow", "business", "marketing", "more customers", "fill slots", "recommendations",
-            "performance", "earnings", "report", "analytics", "money", "financials",
-            "service provider", "how do i get paid",
+            "manage", "schedule", "availability", "calendar", "working hours",
+            "business profile", "services", "pricing", "team", "payments",
+            "reporting", "analytics", "social media", "instagram", "facebook",
+            "booking link", "share",
         ],
         content=(
-            "--- How do I manage my schedule? ---\n"
-            "Use the Service Provider App to set your working hours and manage your profile.\n"
-            'The "Appointment Scheduling Service" handles bookings, rescheduling, and\n'
-            "cancellations automatically.\n"
+            "=== How do I manage my business profile? ===\n"
+            "Use the Business App to create and edit your profile, add services with pricing,\n"
+            "set your availability, and manage your team.\n"
             "\n"
-            "--- How can I grow my business on Skedulelt? ---\n"
-            'The app features a "Personalised Activity and Service Recommendation" engine.\n'
-            'It sends "Contextual Prompts" to users near you if you have a last-minute\n'
-            "cancellation slot open, helping you fill your day.\n"
+            "=== Can I share my SkeduleIt booking link? ===\n"
+            "Yes! You can share your SkeduleIt booking link on Instagram, Facebook, WhatsApp,\n"
+            "and other platforms so customers can book services directly.\n"
             "\n"
-            "--- Can I see my business performance? ---\n"
-            'Yes. The "Financials & Reporting" module provides detailed analytics on your\n'
+            "=== Does SkeduleIt handle payments? ===\n"
+            "Yes. SkeduleIt includes integrated payment processing tools.\n"
+            "\n"
+            "=== Can I see business performance and earnings? ===\n"
+            "Yes. The Business App includes reporting and analytics tools to track your\n"
             "transactions, popular services, and earnings."
         ),
     ),
+    
     Section(
-        id="policies",
-        title="4. Official Policies",
+        id="support_help",
+        title="6. Help & Support",
         keywords=[
-            "cancel", "cancellation", "reschedule", "no-show", "no show",
-            "policy", "policies", "ttd", "currency", "refund", "dispute",
-            "safe", "secure", "security", "encrypted", "privacy", "data",
-            "credit card safe", "authentication", "login",
+            "help", "support", "contact", "assistance", "learn more",
+            "onboarding", "get help", "customer service",
         ],
         content=(
-            "=== Appointment & Cancellation Policy ===\n"
-            "1. Modifications   : Customers can reschedule or cancel appointments via the\n"
-            "                     mobile app.\n"
-            "2. Provider Rights : Service providers have the right to update their\n"
-            "                     availability at any time to prevent double-bookings.\n"
-            '3. No-Show Tracking: Reliability is monitored through the "Review & Rating\n'
-            '                     Service." Frequent no-shows may impact a user\'s ability\n'
-            "                     to book future services.\n"
+            "=== Where can I get help? ===\n"
+            "Support is available through the in-app 'Help & Support' section in both the\n"
+            "Customer and Business apps.\n"
             "\n"
-            "=== Payment & Refund Policy ===\n"
-            "1. Currency : All transactions are processed in Trinidad & Tobago Dollars (TTD).\n"
-            "2. Security : All payment data is encrypted and managed by a secure\n"
-            "              cloud-based backend (Firebase / Google Cloud).\n"
-            "3. Disputes : Transaction disputes are handled through the\n"
-            '              "Admin / Customer Support Portal."\n'
+            "Additional resources:\n"
+            "• SkeduleIt website\n"
+            "• Social media platforms\n"
+            "• Onboarding assistance for businesses during early rollout\n"
             "\n"
-            "=== Data Privacy & Security ===\n"
-            "1. Authentication : User identities are managed by a dedicated Authentication\n"
-            "                    Service using secure access tokens.\n"
-            "2. Messaging      : In-app chat is private and end-to-end encrypted between\n"
-            "                    the client and the provider.\n"
-            '3. Data Usage     : Profile data is used to provide "Next Best Action" prompts\n'
-            '                    (e.g., reminding a user it has been 16 years since their\n'
-            "                    last haircut)."
+            "=== Where can I learn more about SkeduleIt? ===\n"
+            "Information is available in the app's Help & Support section, on the SkeduleIt\n"
+            "website, and across social media platforms."
+        ),
+    ),
+    
+    Section(
+        id="account_management",
+        title="7. Account Management",
+        keywords=[
+            "cancel account", "close account", "delete account",
+            "deactivate", "remove account", "account closure",
+        ],
+        content=(
+            "=== Can I cancel my account? ===\n"
+            "Yes. Both customers and businesses can request account closure at any time.\n"
+            "A confirmation step is included for security.\n"
+            "\n"
+            "For businesses: Closing your account will remove your business from SkeduleIt\n"
+            "and cancel all future appointments."
         ),
     ),
 ]
